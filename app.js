@@ -14,8 +14,8 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-let pwd = process.env.PWD_ID;
-mongoose.connect("mongodb+srv://admin-Nagarjun:"+pwd+"@my-cluster-it-is-bpdhq.mongodb.net/toDoListDB",{ useNewUrlParser: true });
+
+mongoose.connect(process.env.MONGO_URI,{ useNewUrlParser: true });
 
 /* const items = ["Buy Food", "Cook Food", "Eat Food"];
 const workItems = []; */
