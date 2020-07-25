@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect(`mongodb+srv://admin-Nagarjun:Adi@DBadmin007@my-cluster-it-is-bpdhq.mongodb.net/toDoListDB`,{ useNewUrlParser: true });
+mongoose.connect(`mongodb+srv://admin-user:pwd@my-cluster-it-is-bpdhq.mongodb.net/toDoListDB`,{ useNewUrlParser: true });
 
 /* const items = ["Buy Food", "Cook Food", "Eat Food"];
 const workItems = []; */
